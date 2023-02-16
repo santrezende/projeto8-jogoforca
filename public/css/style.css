@@ -1,0 +1,85 @@
+body {
+    box-sizing: border-box;
+}
+
+.app {}
+
+img {
+    height: 500px;
+    width: auto;
+}
+
+.jogo {
+    display: flex;
+    margin: 50px 300px;
+    justify-content: space-between;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    height: 60px;
+    width: 200px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FAFAFA;
+    background-color: #27AE60;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btnword {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.word {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+ul {
+    display: flex;
+    width: 665px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+li {
+    width: 40px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #798A9F;
+    background: #9FAAB5;
+    border: 1px solid #7AA7C7;
+    border-radius: 3px;
+    margin: 3px;
+}
