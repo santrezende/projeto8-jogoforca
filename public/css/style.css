@@ -1,8 +1,13 @@
 body {
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 
-.app {}
+.app {
+    width: 1025px;
+    height: 840px;
+}
 
 img {
     height: 500px;
@@ -11,7 +16,7 @@ img {
 
 .jogo {
     display: flex;
-    margin: 50px 300px;
+    margin: 50px;
     justify-content: space-between;
 }
 
@@ -21,9 +26,10 @@ button {
     border: none;
     padding: 0;
     font: inherit;
-    cursor: pointer;
     outline: inherit;
+}
 
+.startbutton {
     height: 60px;
     width: 200px;
     font-family: 'Roboto';
@@ -59,14 +65,14 @@ button {
     color: #000000;
 }
 
-ul {
+.alfabeto {
     display: flex;
-    width: 665px;
+    width: 600px;
     flex-wrap: wrap;
     margin: auto;
 }
 
-li {
+.desabilitado {
     width: 40px;
     height: 40px;
     font-family: 'Roboto';
@@ -79,6 +85,24 @@ li {
     justify-content: center;
     color: #798A9F;
     background: #9FAAB5;
+    border: 1px solid #7AA7C7;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+.habilitado {
+    width: 40px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7AA7C7;
+    background: #E1ECF4;
     border: 1px solid #7AA7C7;
     border-radius: 3px;
     margin: 3px;

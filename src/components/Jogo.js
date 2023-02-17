@@ -1,34 +1,14 @@
-import palavras from './palavras'
+import imagens from './imagens'
 
-export default function Jogo() {
-
-    const imagens = [
-        'assets/forca0.png',
-        'assets/forca1.png',
-        'assets/forca2.png',
-        'assets/forca3.png',
-        'assets/forca4.png',
-        'assets/forca5.png',
-        'assets/forca6.png',
-    ]
-
-    let randomWord = palavras[Math.floor(Math.random() * palavras.length)];
-    console.log(randomWord);
-
-    const hiddenLetter = "_ ";
-    let hiddenWord = "";
-
-    for (let i = 0; i < randomWord.length; i++) {
-        hiddenWord += hiddenLetter;
-    }
+export default function Jogo(props) {
 
     return (
         <div class='jogo'>
             <img src={imagens[0]} />
             <div class='btnword'>
-                <button>Escolher Palavra</button>
+                {props.startButton}
                 <div class='word'>
-                    {hiddenWord}
+                    {props.palavraInicial}
                 </div>
             </div>
         </div>

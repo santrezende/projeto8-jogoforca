@@ -1,9 +1,18 @@
 import alfabeto from './alfabeto'
 
-export default function Letras() {
+export default function Letras(props) {
+    let chosenLetter
+
     return (
-        <ul class='alfabeto'>
-            {alfabeto.map((l) => <li>{l.toUpperCase()}</li>)}
-        </ul>
+        <div class='alfabeto'>
+            {props.alfabetoInicial}
+        </div>
     )
 }
+
+// onClick={
+//     function escolheLetra() {
+//         chosenLetter = l
+//         console.log(chosenLetter)
+//     }
+// }
