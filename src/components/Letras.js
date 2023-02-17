@@ -1,7 +1,4 @@
-import alfabeto from './alfabeto'
-
 export default function Letras(props) {
-    let chosenLetter
 
     return (
         <div class='alfabeto'>
@@ -9,10 +6,3 @@ export default function Letras(props) {
         </div>
     )
 }
-
-// onClick={
-//     function escolheLetra() {
-//         chosenLetter = l
-//         console.log(chosenLetter)
-//     }
-// }

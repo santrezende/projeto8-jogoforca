@@ -106,4 +106,5 @@ button {
     border: 1px solid #7AA7C7;
     border-radius: 3px;
     margin: 3px;
+    cursor: pointer;
 }

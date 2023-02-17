@@ -1,14 +1,12 @@
-import imagens from './imagens'
-
 export default function Jogo(props) {
 
     return (
         <div class='jogo'>
-            <img src={imagens[0]} />
+            <img data-test="game-image" src={props.image} />
             <div class='btnword'>
                 {props.startButton}
-                <div class='word'>
-                    {props.palavraInicial}
+                <div data-test="word" class='word'>
+                    {props.palavraJogo}
                 </div>
             </div>
         </div>
