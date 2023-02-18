@@ -5,7 +5,7 @@ export default function Jogo(props) {
             <img data-test="game-image" src={props.image} />
             <div class='btnword'>
                 {props.startButton}
-                <div data-test="word" class='word'>
+                <div data-test="word" class={props.result}>
                     {props.palavraJogo}
                 </div>
             </div>

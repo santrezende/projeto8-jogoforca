@@ -108,3 +108,11 @@ button {
     margin: 3px;
     cursor: pointer;
 }
+
+.ganhou {
+    color: #27AE60;
+}
+
+.perdeu {
+    color: #FF0000;
+}
