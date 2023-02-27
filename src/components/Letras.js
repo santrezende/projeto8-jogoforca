@@ -1,7 +1,7 @@
 export default function Letras(props) {
 
     return (
-        <div class='alfabeto'>
+        <div className='alfabeto'>
             {props.alfabetoInicial}
         </div>
     )

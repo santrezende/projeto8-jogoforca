@@ -1,11 +1,11 @@
 export default function Jogo(props) {
 
     return (
-        <div class='jogo'>
+        <div className='jogo'>
             <img data-test="game-image" src={props.image} />
-            <div class='btnword'>
+            <div className='btnword'>
                 {props.startButton}
-                <div data-test="word" class={props.result}>
+                <div data-test="word" className={props.result}>
                     {props.palavraJogo}
                 </div>
             </div>
